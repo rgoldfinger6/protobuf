@@ -27,6 +27,9 @@
 #include "google/protobuf/unittest.pb.h"
 
 
+// Must be included last.
+#include "google/protobuf/port_def.inc"
+
 namespace google {
 namespace protobuf {
 namespace internal {
@@ -251,3 +254,5 @@ TEST(HasBitsTest, HasBitsClearedOnMapFieldClearWithReflection) {
 }  // namespace internal
 }  // namespace protobuf
 }  // namespace google
+
+#include "google/protobuf/port_undef.inc"
